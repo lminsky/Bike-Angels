@@ -90,18 +90,18 @@ function updatePage() {
       points += "<span class='fewer points'>(" + pointDiff + ")</span>";
     }
 
-    if(Number(angelStations[i].points) > 2) {
-      var title = angelStations[i].points;
-      if(angelStations[i].action == "give") {
-        title += " (Give)";
-      } else {
-        title += " (Take)";
-      }
-      const options = {
-        body: angelStations[i].name
-      };
-      registration.showNotification(title, options);
-    }
+//     if(Number(angelStations[i].points) > 2) {
+//       var title = angelStations[i].points;
+//       if(angelStations[i].action == "give") {
+//         title += " (Give)";
+//       } else {
+//         title += " (Take)";
+//       }
+//       const options = {
+//         body: angelStations[i].name
+//       };
+//       registration.showNotification(title, options);
+//     }
 
     td1.innerHTML = points;
     var prevPoints = document.createElement("span");
