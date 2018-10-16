@@ -1,0 +1,39 @@
+a {
+  color: #000;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #999999;
+    text-align: left;
+    padding: 6px;
+}
+
+tr.take {
+    background-color: #dddddd;
+}
+
+div {
+  padding: 8px;
+}
+
+input {
+  width: 50px;
+}
+
+.more {
+  color: #009900;
+}
+
+.fewer {
+  color: #990000;
+}
+
+.points {
+  padding-left: 10px;
+}
