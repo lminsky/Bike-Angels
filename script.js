@@ -89,6 +89,20 @@ function updatePage() {
     } else if(pointDiff < 0) {
       points += "<span class='fewer points'>(" + pointDiff + ")</span>";
     }
+
+    if(Number(angelStations[i].points) > 2) {
+      const title;
+      if(angelStations[i].action == "give") {
+        title = angelStations[i].points + " (Give)";
+      } else {
+        title = angelStations[i].points + " (Take)";
+      }
+      const options = {
+        body: angelStations[i].name
+      };
+      registration.showNotification(title, options);
+    }
+
     td1.innerHTML = points;
     var prevPoints = document.createElement("span");
     // var td2 = document.createElement("td");
