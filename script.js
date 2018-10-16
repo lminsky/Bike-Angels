@@ -91,11 +91,11 @@ function updatePage() {
     }
 
     if(Number(angelStations[i].points) > 2) {
-      const title;
+      var title = angelStations[i].points;
       if(angelStations[i].action == "give") {
-        title = angelStations[i].points + " (Give)";
+        title += " (Give)";
       } else {
-        title = angelStations[i].points + " (Take)";
+        title += " (Take)";
       }
       const options = {
         body: angelStations[i].name
