@@ -102,7 +102,7 @@ function updatePage() {
     t.appendChild(tr);
 
     points = Number(angelStations[i].points);
-    if(i == 0 || points > 1) {
+    if(i == 0) {
       var icon = "/assets/give.png";
       if(angelStations[i].action == "take") {
         icon = "/assets/take.png";
